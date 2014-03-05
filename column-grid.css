@@ -22,9 +22,10 @@
   -webkit-column-break-inside: avoid;
   padding: 10px;
 }
+/* fix for Firefox */
 @-moz-document url-prefix() {
   .cell {
-    display: inline-block;
+    overflow: hidden; 
   }
 }
 /* Responsive modifiers */
