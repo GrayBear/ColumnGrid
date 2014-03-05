@@ -1,0 +1,15 @@
+﻿.columns.columns-classic .cell {
+    border:1px solid #eee;
+    padding: 10px;
+    border-radius: 10px;
+        -webkit-transition-property: left,right,top;
+    -moz-transition-property: left,right,top;
+    -ms-transition-property: left,right,top;
+    -o-transition-property: left,right,top;
+    transition-property: left,right,top;
+    -webkit-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+    -ms-transition-duration: 0.6s;
+    -o-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+}

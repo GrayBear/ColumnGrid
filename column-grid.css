@@ -16,16 +16,18 @@
   -webkit-column-fill: auto;
   column-fill: auto;
 }
-.cell {
-  margin-bottom: 5px;
-  border-radius: 10px;
+.columns > .cell {
   -webkit-column-break-inside: avoid;
-  padding: 10px;
+  margin-bottom: 10px;
 }
 @-moz-document url-prefix() {
-  .cell {
+ .columns > .cell {
      overflow: hidden; 
   }
+}
+/*Please note this is limited in function and has issues with browser compatibility*/
+.columns > .cell.cell-span-all {
+    -webkit-column-span: all; column-span: all;
 }
 /* Responsive modifiers */
 
@@ -38,7 +40,7 @@
     -moz-column-gap: 5px;
     column-gap: 5px;
   }
-  .cell {
+  .columns > .cell {
     margin-bottom: 5px;
   }
 }
@@ -51,7 +53,7 @@
     -moz-column-gap: 10px;
     column-gap: 10px;
   }
-  .cell {
+  .columns > .cell {
     margin-bottom: 10px;
   }
 }
@@ -65,7 +67,7 @@
     column-gap: 10px;
 
   }
-  .cell {
+  .columns > .cell {
     margin-bottom: 10px;
   }
 }
