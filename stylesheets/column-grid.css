@@ -1,0 +1,71 @@
+/*
+  Flexible Columns
+  ---------------------------------------------
+  Responsive columns layout
+*/
+
+.columns {
+  width: 100%;
+  margin: 0em auto;
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
+  -webkit-column-gap: 5px;
+  -moz-column-gap: 5px;
+  column-gap: 5px;
+  -webkit-column-fill: auto;
+  column-fill: auto;
+}
+.cell {
+  margin-bottom: 5px;
+  border-radius: 10px;
+  -webkit-column-break-inside: avoid;
+  padding: 10px;
+}
+@-moz-document url-prefix() {
+  .cell {
+    display: inline-block;
+  }
+}
+/* Responsive modifiers */
+
+@media (max-width: 24em) {
+  .columns {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-gap: 5px;
+    -moz-column-gap: 5px;
+    column-gap: 5px;
+  }
+  .cell {
+    margin-bottom: 5px;
+  }
+}
+@media (min-width: 24em) and (max-width: 48em) {
+  .columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+  }
+  .cell {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 48em) {
+  .columns {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+
+  }
+  .cell {
+    margin-bottom: 10px;
+  }
+}

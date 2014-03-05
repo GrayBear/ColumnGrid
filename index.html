@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
     <meta charset='utf-8'>
@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <link href="stylesheets/column-grid.css" rel="stylesheet" />
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -30,11 +31,40 @@
 
         <hr>
 
+
         <section id="main_content">
+
+
+
+
+            <div class="columns">
+                <div class="cell red">
+                    <h2>
+                       ColumnGridCSS 
+                    </h2>
+
+                    <p>is a great way to stucture content on you page.</p>
+                </div>
+                <div class="cell gray">
+                    <p>It allows you to stucture your page in a newspaper column style</p>
+                </div>
+                <div class="cell gray">
+                    <p>Its easily customisable</p>
+                </div>
+                <div class="cell red">
+                    <p>CSS Only</p>
+                </div>
+                <div class="cell red">
+                    <p>This is a ColumnGridCSS container</p> 
+                </div>
+            </div>
+
+
+
           <h2>
 <a name="how-to-use" class="anchor" href="#how-to-use"><span class="octicon octicon-link"></span></a>How to use</h2>
 
-<p>Apply the csss to the </p> tag in your document
+  <p>Apply the CSS file to the  tag in your html document in the &lt;head&gt;</p>
 
 <pre><code>&lt;link rel="stylesheet" href="column-grid.css"&gt;
 </code></pre>
@@ -56,37 +86,26 @@
 
 <p>This will create</p>
 
-<p>On Large Screens</p>
 
-<pre><code>-------------------------------------
-| first    | second     | third     |
--------------------------------------
-</code></pre>
+<div class="columns">
+    <div class="cell gray">
+        <p>first</p>
+    </div>
+    <div class="cell gray">
+        <p>second</p>
+    </div>
+    <div class="cell gray">
+        <p>third</p>
+    </div>
+</div>
 
-<p>On Medium Screens</p>
+<p>Try changing the screen size</p>
 
-<pre><code>--------------------------
-| first     | second     |
---------------------------
-| second    |
--------------
-</code></pre>
-
-<p>On Small Screens</p>
-
-<pre><code>-------------
-| first     |
--------------
-| second    |
--------------
-| third     |
--------------
-</code></pre>
 
 <h2>
 <a name="customising" class="anchor" href="#customising"><span class="octicon octicon-link"></span></a>Customising</h2>
 
-<p>The main customisable tags for the column grid are held in the .colums class (This is repeated for each of the <a href="https://github.com/media" class="user-mention">@media</a> queries).</p>
+<p>The main customisable tags for the column grid are held in the .colums class (This is repeated for each of the media).</p>
 
 <p>Each of the column css tags currently requires vendor specific versions e.g. -webkit.</p>
 
