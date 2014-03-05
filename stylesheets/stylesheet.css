@@ -380,6 +380,14 @@ footer a:hover {
      background-color: #888;
 }
 
+.cell.gray, .cell.red {
+    	-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+
+}
+
+
 .cell.red p, .cell.gray p {
     color:#ffe;
 
