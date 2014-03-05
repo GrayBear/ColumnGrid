@@ -24,7 +24,7 @@
 }
 @-moz-document url-prefix() {
   .cell {
-    display: inline-block;
+     overflow: hidden; 
   }
 }
 /* Responsive modifiers */
