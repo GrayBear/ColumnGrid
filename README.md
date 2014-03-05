@@ -3,6 +3,8 @@ ColumnGrid
 
 Responsive CSS only column grid.
 
+Git Site with demo http://graybear.github.io/ColumnGrid/
+
 ##How to use
 
 Apply the csss to the <head> tag in your document
